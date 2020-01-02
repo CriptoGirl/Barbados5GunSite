@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= `${title}`
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+
+  body
+    header.navbar.bg-info.text-light
+      h1 Welcome to 5 Gun Site, Barbados!
+
+    include menu.pug
+
+    div.container-fluid
+      block content
