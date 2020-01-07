@@ -7,7 +7,7 @@ const path = require('path');
 const home = require('../routes/home');
 const homeInfo = require('../routes/homeInfo');
 const photos = require('../routes/photos');
-const photoGallery = require('../routes/photoGallery');
+const bookings = require('../routes/bookings');
 
 
 app.set('../views', path.join(__dirname, 'views'));
@@ -18,6 +18,6 @@ app.use('/', home);
 app.use('/home', home);
 app.use('/homeInfo', homeInfo);
 app.use('/photos', photos);
-app.use('/photoGallery', photoGallery);
+app.use('/bookings', bookings);
 
 module.exports = app;
