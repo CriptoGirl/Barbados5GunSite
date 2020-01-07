@@ -7,6 +7,8 @@ const path = require('path');
 const home = require('../routes/home');
 const homeInfo = require('../routes/homeInfo');
 const photos = require('../routes/photos');
+const photoGallery = require('../routes/photoGallery');
+
 
 app.set('../views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -16,5 +18,6 @@ app.use('/', home);
 app.use('/home', home);
 app.use('/homeInfo', homeInfo);
 app.use('/photos', photos);
+app.use('/photoGallery', photoGallery);
 
 module.exports = app;

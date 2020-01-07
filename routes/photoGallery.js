@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   //res.send('Photo Gallery page');
-  res.render('photos', { title: 'Photos page' });
+  res.render('photoGallery', { title: 'Photo Gallery page' });
   //let images = getImagesFromDir(path.join(__dirname, 'uploads'));
   //let images = getImagesFromDir('static')
   //res.render('photos', { title: 'Photos page', images: images });

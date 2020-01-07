@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  div.container
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+      </ul>
+      div.carousel-inner
+        div.carousel-item.active
+          img.img-responsive( height="500" alt="LivingRoom01"
+            src="https://drive.google.com/uc?id=1Q3UZuM-FDzgd-nM4pV4iMRl0EWR-hlNj" )
+        div.carousel-item
+          img.img-responsive( height="500" alt="Patio01"
+           src="https://drive.google.com/uc?id=1Q9twjtqZW0VfhtIild2uKOuNhj05JJEX" )
+        div.carousel-item
+          img.img-responsive( alt="Path01" height="500"
+            src="https://drive.google.com/uc?id=1O78xLAQGI79mj7uYq2-yaxmvUW6ETFSr")
+        div.carousel-item
+          img.img-responsive( alt="LivingRoom02" height="500"
+            src="https://drive.google.com/uc?id=1PQxV8nLPnT52sZL1UcYL_cpji_dYlj9t")
+        div.carousel-item
+          img.img-responsive( alt="X-mass01" height="500"
+            src="https://drive.google.com/uc?id=1PNdNuLOcuZE2IPtawq6dT4SwQz1tqST1")
+
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
